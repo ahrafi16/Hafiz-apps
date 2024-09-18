@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAFIZ</title>
+    <link rel="icon" type="image/x-icon" href="images/letter-h.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .fontLato {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="fontLato">
+    <header class="container mx-auto px-12 mt-9">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li> <a>About me</a></li>
+                        <li><a href="#app">Apps</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl text-[#5A639C] font-bold">HAFIZUR RAHMAN</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li> <a>About me</a></li>
+                    <li><a href="#app">Apps</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <!-- <a class="btn bg-teal-500 text-white mr-2">Hire me</a> -->
+                <!-- dark -->
+                <label class="swap swap-rotate">
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" class="theme-controller" value="synthwave" />
+
+                    <!-- sun icon -->
+                    <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                    </svg>
+
+                    <!-- moon icon -->
+                    <svg class="swap-on h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+        <!-- banner section -->
+        <section class="space-y-5 my-5">
+            <div class="card card-side bg-base-100">
+                <div class="card-body">
+                    <h2 class="card-title">Hi, I am</h2>
+                    <h2 class="card-title">HAFIZUR RAHMAN</h2>
+                    <p class="text-6xl"><span class="text-sky-500">Flutter</span> App Developer</p>
+                    <div>
+                        <a href="" class="mr-2.5" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/hafizflow/" class="mr-2.5" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/hafizflow" class="mr-2.5" target="_blank"> <i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://t.me/hafizflow45" target="_blank"> <i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <div class="card-actions">
+                        <button id="myButton" class="btn bg-[#9B86BD] text-white">Hire me <span id="loader"
+                                class="loading loading-spinner loading-lg hidden"></span></button>
+                        <button class="btn  bg-[#9B86BD] text-white">Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+
+    <main class="container mx-auto px-12">
+        <!-- Apps section -->
+        <section class="space-y-5 my-7" id="app">
+            <hr>
+            <h2 class="text-4xl font-bold text-center my-5">My Apps</h2>
+            <hr>
+            <!-- card container -->
+            <div class="grid gap-5">
+                <div class="lg:flex gap-5 items-center">
+                    <div class="flex-1 space-y-7">
+                        <h1 class="lg:text-6xl font-bold">Cover Crafter</h1>
+                        <p class="lg:text-2xl text-justify">CoverPage. This app simplifies the process of making a cover page for university students. <br>
+                            Feature:
+                             One-time information entry ( Student Information ).
+                             Work for different university.
+                             Download and Multi-Theme options for the cover page.
+                            Dark Mode and User-friendly design.
+                            </p>
+                        <div class="flex items-center gap-4">
+                            <a href="https://github.com/hafizflow/Cover-Crafter"><i class="fa-brands fa-github fa-4x"></i></a>
+                            <button class="btn border-none bg-[#9B86BD] text-white">
+                                <a href="images/Apps/Cover Crafter.apk">Download Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card flex flex-1 card-compact bg-base-100 shadow-md hover:shadow-2xl bg-[#5A639C]"
+                        onclick="showPopup('This application simplified the process of making cover page for assignment & lab report.')">
+                        <figure>
+                            <img class="duration-300 transform hover:scale-110" src="images/cc.jpg"
+                                alt="Cover Crafter" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl text-white">Cover Crafter</h2>
+                            <p class="text-white">Make cover page easily!</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn border-none bg-[#9B86BD] text-white">
+                                    <a href="images/Apps/Cover Crafter.apk">Download</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:flex gap-5 items-center">
+                    <div class="flex-1 items-center space-y-7">
+                        <h1 class="lg:text-6xl font-bold">DIU Result</h1>
+                        <p class="lg:text-2xl text-justify">DIU Result App, a mobile application that allows Daffodil International University students to easily access and track their academic results in real-time.</p>
+                        <div class="flex items-center gap-4">
+                            <a href="https://github.com/hafizflow/DIU-Result"><i class="fa-brands fa-github fa-4x"></i></a>
+                            <button class="btn border-none bg-[#9B86BD] text-white">
+                                <a href="images/Apps/DIU Result (3).apk">Download Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card flex flex-1 card-compact bg-base-100 shadow-md hover:shadow-2xl bg-[#5A639C]"
+                        onclick="showPopup('This application allows you to easily check your results.DIU studens can check their results easily and faster than any other apps.')">
+                        <figure>
+                            <img class="bg-cover transition-transform duration-300 transform hover:scale-110"
+                                src="images/diur.jpg" alt="DIU Result" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title text-3xl text-white">DIU Result</h2>
+                            <p class="text-white">Get result easily!</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn border-none bg-[#9B86BD] text-white">
+                                    <a href="images/Apps/DIU Result (3).apk">Download</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!-- Popup -->
+    <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+        onclick="closePopup(event)">
+        <div class="bg-white rounded-lg p-6" onclick="event.stopPropagation()">
+            <h2 class="text-lg font-bold">Information</h2>
+            <p id="popup-message">This is a default message.</p>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="footer bg-neutral text-neutral-content items-center p-4">
+        <aside class="grid-flow-col items-center">
+            <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>Copyright © 2024(anjumhossain) - All right reserved</p>
+        </aside>
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                    </path>
+                </svg>
+            </a>
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                    </path>
+                </svg>
+            </a>
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                    </path>
+                </svg>
+            </a>
+        </nav>
+    </footer>
+
+
+    <script>
+        function showPopup(message) {
+            document.getElementById('popup-message').innerText = message;
+            document.getElementById('popup').classList.remove('hidden');
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.add('hidden');
+        }
+
+
+
+
+        // loader
+        document.getElementById('myButton').addEventListener('click', function () {
+            const loader = document.getElementById('loader');
+            loader.classList.remove('hidden'); // Show the loader
+
+            // Hide the loader after 2 seconds
+            setTimeout(() => {
+                loader.classList.add('hidden'); // Hide the loader
+            }, 2000);
+        });
+    </script>
+
+
+
+</body>
+
+</html>
