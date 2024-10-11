@@ -9,6 +9,11 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,6 +31,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         .fontLato {
             font-family: "Lato", sans-serif;
         }
@@ -102,13 +111,13 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-[#5A639C] rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a>Home</a></li>
                         <li> <a>About me</a></li>
                         <li><a href="#app">Apps</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl text-[#5A639C] font-bold">HAFIZUR RAHMAN</a>
+                <a class="btn btn-ghost hidden lg:block text-xl text-[#5A639C] font-bold">HAFIZUR RAHMAN</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -181,9 +190,9 @@
             <!-- card container -->
             <div class="grid gap-5">
                 <div class="lg:flex gap-5 items-center">
-                    <div class="flex-1 space-y-7">
+                    <div class="flex-1 space-y-7 mb-2">
                         <h1 class="lg:text-6xl font-bold">Cover Crafter</h1>
-                        <p class="lg:text-2xl text-justify">CoverPage. This app simplifies the process of making a cover
+                        <p class="lg:text-2xl text-justify">Cover Crafter. This app simplifies the process of making a cover
                             page for university students. <br>
                             Feature:
                             One-time information entry ( Student Information ).
@@ -191,8 +200,8 @@
                             Download and Multi-Theme options for the cover page.
                             Dark Mode and User-friendly design.
                         </p>
-                        <img src="images/ccbanner.jpg" alt="">
-                        <div class="flex items-center gap-4">
+                        <img class="lg:rounded-3xl" src="images/ccbanner.jpg" alt="">
+                        <div class="flex items-center gap-4 mb-2">
                             <a href="https://github.com/hafizflow/Cover-Crafter"><i
                                     class="fa-brands fa-github fa-4x"></i></a>
                             <button class="btn border-none bg-[#9B86BD] text-white">
@@ -219,12 +228,12 @@
                 </div>
 
                 <div class="lg:flex gap-5 items-center">
-                    <div class="flex-1 items-center space-y-7">
+                    <div class="flex-1 items-center space-y-7 mb-2">
                         <h1 class="lg:text-6xl font-bold">DIU Result</h1>
                         <p class="lg:text-2xl text-justify">DIU Result App, a mobile application that allows Daffodil
                             International University students to easily access and track their academic results in
                             real-time.</p>
-                            <img src="images/resBanner.jpg" alt="">
+                        <img class="lg:rounded-3xl" src="images/resBanner.jpg" alt="">
                         <div class="flex items-center gap-4">
                             <a href="https://github.com/hafizflow/DIU-Result"><i
                                     class="fa-brands fa-github fa-4x"></i></a>
@@ -263,8 +272,8 @@
     <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
         onclick="closePopup(event)">
         <div class="bg-white rounded-lg p-6" onclick="event.stopPropagation()">
-            <h2 class="text-lg font-bold">Information</h2>
-            <p id="popup-message">This is a default message.</p>
+            <h2 class="text-lg font-bold text-red-700"><i class="fa-solid fa-circle-info"></i> Information</h2>
+            <p class="text-red-700" id="popup-message">This is a default message.</p>
             <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onclick="closePopup()">Close</button>
         </div>
     </div>
